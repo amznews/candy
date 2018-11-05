@@ -6,6 +6,7 @@ var vid = document.getElementById("myVideo");
 
 // START FUNCTION ////////////////////////////////////////////////////////////
 window.onload = function() {
+	"use strict";
 	vid.play();
 	setTimeout(function() {pauseVid();}, 3500);
 	setTimeout(function() {show1();}, 3500);
@@ -14,6 +15,7 @@ window.onload = function() {
 
 // STEP 1 FUNCTION ///////////////////////////////////////////////////////////
 function step1() {
+	"use strict";
     vid.play();
 	document.getElementById('stp1').style.display = 'none';
 	setTimeout(function() {pauseVid();}, 8600);
@@ -23,6 +25,7 @@ function step1() {
 
 // STEP 2 FUNCTION ///////////////////////////////////////////////////////////
 function step2() {
+	"use strict";
     vid.play();
 	document.getElementById('stp2').style.display = 'none';
 	setTimeout(function() {pauseVid();}, 3000);
@@ -32,6 +35,7 @@ function step2() {
 
 // STEP 3 FUNCTION ///////////////////////////////////////////////////////////
 function step3() {
+	"use strict";
     vid.play();
 	document.getElementById('stp3').style.display = 'none';
 }
@@ -39,13 +43,14 @@ function step3() {
 
 
 // SHOW SWIPE BOX FUNCTIONS //////////////////////////////////////////////////
-function show1() {document.getElementById('stp1').style.display = 'block';}
-function show2() {document.getElementById('stp2').style.display = 'block';}
-function show3() {document.getElementById('stp3').style.display = 'block';}
+function show1() {"use strict";document.getElementById('stp1').style.display = 'block';}
+function show2() {"use strict";document.getElementById('stp2').style.display = 'block';}
+function show3() {"use strict";document.getElementById('stp3').style.display = 'block';}
 // ///////////////////////////////////////////////////////////////////////////
 
 // PAUSE VIDEO FUNCTION //////////////////////////////////////////////////////
 function pauseVid() {
+	"use strict";
     vid.pause();
 }
 // ///////////////////////////////////////////////////////////////////////////
